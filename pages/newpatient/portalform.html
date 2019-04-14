@@ -11,7 +11,7 @@
 
 <body>
 
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <form class="well form-horizontal" action="http://localhost:3002/PatientOwner/" method="post"  id="contact_form" onsubmit="setTimeout(function () { window.location.reload(); }, 50)">
 <fieldset>
 
 <!-- Text input-->
@@ -21,7 +21,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="Fname" placeholder="First Name" class="form-control"  type="text">
     </div>
   </div>
 </div>
@@ -33,18 +33,18 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+  <input name="Lname" placeholder="Last Name" class="form-control"  type="text">
     </div>
   </div>
 </div>
 
 <!-- Text input-->
        <div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>
+  <label class="col-md-4 control-label">Customer Number</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
+  <input name="PetID" placeholder="Customer Number" class="form-control"  type="text">
     </div>
   </div>
 </div>
@@ -57,7 +57,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+  <input name="Phone" placeholder="(845)555-1212" class="form-control" type="text">
     </div>
   </div>
 </div>
@@ -69,7 +69,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="address" placeholder="Address" class="form-control" type="text">
+  <input name="Address" placeholder="Address" class="form-control" type="text">
     </div>
   </div>
 </div>
@@ -81,7 +81,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="city" placeholder="City" class="form-control"  type="text">
+  <input name="City" placeholder="City" class="form-control"  type="text">
     </div>
   </div>
 </div>
@@ -93,7 +93,7 @@
     <div class="col-md-4 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="state" class="form-control selectpicker" >
+    <select name="State" class="form-control selectpicker" >
       <option value=" " >Please select your state</option>
       <option>Alabama</option>
       <option>Alaska</option>
@@ -158,7 +158,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+  <input name="ZipCode" placeholder="Zip Code" class="form-control"  type="text">
     </div>
 </div>
 </div>
@@ -168,8 +168,8 @@
   <label class="col-md-4 control-label">Pet's Name</label>
    <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-  <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-menu-right"></i></span>
+  <input name="petsname" placeholder="Pets Name" class="form-control" type="text">
     </div>
   </div>
 </div>
@@ -181,7 +181,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<textarea class="form-control" name="comment" placeholder="Visit Description"></textarea>
+        	<textarea class="form-control" name="visit" placeholder="Visit Description"></textarea>
   </div>
   </div>
 </div>
