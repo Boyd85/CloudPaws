@@ -16,16 +16,16 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">File</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Add Vet</a>
-      <a class="dropdown-item" href="#">Add Department</a>
-      <a class="dropdown-item" href="#">Add User</a>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addVet">
+        Add Vet
+      </button>
     </div>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Options</a>
     <div class="dropdown-menu">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#versionPopup">
         About
       </button>
     </div>
@@ -79,7 +79,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="versionPopup" tabindex="-1" role="dialog" aria-labelledby="versionPopupTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -94,6 +94,27 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addVet" tabindex="-1" role="dialog" aria-labelledby="addVetTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add a Vet:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <form method="post" action="http://localhost:3002/Vets/" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+          <input class="form-control" type="text" name="FName" placeholder="First Name">
+          <input class="form-control" type="text" name="LName" placeholder="Last Name">
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
+      </form>
     </div>
   </div>
 </div>
