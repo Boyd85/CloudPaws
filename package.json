@@ -1,6 +1,6 @@
 {
   "name": "cloudpaws-final",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Vet EHR",
   "main": "app.js",
   "scripts": {
