@@ -6,19 +6,18 @@ const app = express();
 const routes = require('./routes/routes');
 const path = require('path');
 
-// Use Node.js body parsing middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true,
 }));
 
-app.use('/static', express.static('public'))
-
-//routes(app);
+app.use('/static', express.static('public'));
 
 app.get('/', function (req, res){
   res.sendFile(path.join(__dirname, '/Portal.html'))
-})
+});
+
+routes(app);
 
 // Start the server
 const server = app.listen(port, (error) => {
