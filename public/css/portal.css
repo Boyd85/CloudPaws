@@ -134,3 +134,17 @@ button.btn.btn-primary{
 button.btn.btn-primary:hover{
   opacity: 0.4;
 }
+
+a {
+  text-decoration: none;
+  border-radius: 0px;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border: none;
+  color: black;
+}
+
+a:hover{
+  opacity: 0.4;
+}
